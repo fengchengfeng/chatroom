@@ -26,16 +26,23 @@
  	 */
  	 $('.user-name').keyup(function() {
  	 	userName = $(this).val();
- 	 	if (userName) {
- 	 		$('.alert2 button')
- 	 		.css('color','#000')
- 	 		.click(function() {
- 	 			$('.alert2,.opacity').hide();
- 	 			$('#userHeadImage').attr('src',userHeadImageURL);
- 	 			$('#userName').text(userName);
- 	 		});
+ 	 	if (userName.length) {
+ 	 		$('.alert2 button').css('color','#000');
+ 	 	}
+ 	 	else {
+ 	 		$('.alert2 button').css('color','#555');
  	 	}
  	 });
+ 	 /*
+ 	  *处理用户名提交事件
+ 	  */
+ 	  $('.alert2 button').click(function(){
+ 	  	if (userName.length) {
+ 	  		$('.alert2,.opacity').hide();
+ 	  		$('#userHeadImage').attr('src',userHeadImageURL);
+ 	  		$('#userName').text(userName);
+ 	  	}
+ 	  });
  	/*
  	 *获取用户输入内容，保存用户输入内容
  	 */
