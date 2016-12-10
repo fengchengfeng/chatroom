@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>CHAT ROOM</title>
+  <link rel="stylesheet" type="text/css" href="./index.css" >
+</head>
+<body>
+  <div class="alert alert1">
+    <h2>please choose your image</h2>
+    <div class="images">
+      <img src="./images/apple.png">
+      <img src="./images/banana.png">
+      <img src="./images/bananas.jpg">
+      <img src="./images/grape.jpg">
+      <img src="./images/grape.png">
+      <img src="./images/mango.jpg">
+      <img src="./images/monkey.jpg">
+      <img src="./images/peach.jpg">
+      <img src="./images/pear.png">
+      <img src="./images/pineapple.png">
+      <img src="./images/strawberry.jpg">
+      <img src="./images/watermelon.png">
+    </div>
+  </div>
+  <div class="alert alert2">
+    <h2>please input your name</h2>
+    <input class="user-name" type="text" name="userName" maxlength="11" placeholder="最多可输入11个字符">
+    <button>OK</button>
+  </div>
+  <div class="opacity"></div>
+  <div class="header">
+    <h1>welcome to chat room</h1>
+  </div>
+  <div class="main">
+    <div class="chat-box">
+      <div class="user-info">
+        <img id="userHeadImage">
+        <p id="userName"></p>
+      </div>
+      <textarea maxlength="140" placeholder="开始聊天吧！"></textarea>
+      <p>还可以输入<span id="message">140</span>个字。<button>提交</button></p>
+    </div>
+    <div class="container">
+    </div>
+  </div>
+  <script src="./jquery-2.2.2.min.js"></script>
+  <script type="text/javascript" src="./index.js" ></script>
+</body>
+</html>
